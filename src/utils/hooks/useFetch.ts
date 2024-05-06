@@ -10,7 +10,7 @@ type Props = {
 const useFetch = <T>({ url, method = 'GET', body, skip }: Props) => {
   const hasFetchedRef = useRef(false);
   const [data, setData] = useState<T>();
-  const [error, setError] = useState<Error>();
+  const [error, setError] = useState<any>();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
