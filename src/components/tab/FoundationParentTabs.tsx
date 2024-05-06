@@ -3,8 +3,9 @@ import { useEffect, useState } from 'react';
 import FoundationEntityTab from './FoundationTabComponent';
 import useFetch from '@/utils/hooks/useFetch';
 import { FoundationEntity } from '@/types/icd/IcdFoundationType';
+import { useAuth } from '@/context/authContext';
 
-const FOUNDATION_BASE_URL = 'http://localhost:5000/api/icd/entity/';
+const FOUNDATION_BASE_URL = `/api/icd/foundationId?foundationId=`;
 
 type TabsProps = {
   selectedEntityId: string;
@@ -13,6 +14,7 @@ type TabsProps = {
 const FoundationTabsParent = ({ selectedEntityId }: TabsProps) => {
   const [activeTab, setActiveTab] = useState<number | boolean>(false);
   const [selectedParentEntityId, setSelectedEntityId] = useState(null);
+  const { authToken } = useAuth();
 
   useEffect(() => {
     if (selectedParentEntityId !== selectedEntityId) {
@@ -23,6 +25,7 @@ const FoundationTabsParent = ({ selectedEntityId }: TabsProps) => {
   const { data, error, loading } = useFetch<FoundationEntity>({
     url: `${FOUNDATION_BASE_URL}${selectedEntityId}`,
     method: 'GET',
+    authToken: authToken!,
     skip: !selectedEntityId,
   });
 

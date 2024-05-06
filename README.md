@@ -1,4 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Deployed on Vercel
+
+@ icd-frontend.vercel.app
+
+## Database
+
+This project uses a db.json in order to resemble possible lead matches. The matching
+algorithm will compare icdCode, title and definition of a decease against the corresponding
+condition of a lead. For matches, use the free text search and try out different types of
+diabetes, pneumonia or intestinal infections.
 
 ## Getting Started
 

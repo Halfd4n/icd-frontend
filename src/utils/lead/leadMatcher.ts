@@ -1,14 +1,14 @@
-import { SearchDiagnosisResponse } from '@/types/icd/IcdSearchDiagnosis';
 import { Lead } from '@/types/lead/leadEntity';
 import { WordTokenizer } from 'natural';
 
 const tokenizer = new WordTokenizer();
 
-export const LeadMatchCalculator = (
-  lead: Lead,
-  diagnosis: SearchDiagnosisResponse
-) => {
-  const { theCode, matchingText, definition: diagnosisDefinition } = diagnosis;
+export const LeadMatchCalculator = (lead: Lead, diagnosis: any) => {
+  const {
+    icdCode: diagnosisIcd,
+    title: diagnosisTitle,
+    definition: diagnosisDefinition,
+  } = diagnosis;
   const {
     icdCode,
     title,
@@ -17,9 +17,12 @@ export const LeadMatchCalculator = (
 
   let totalSimilarityScore = 0;
 
-  totalSimilarityScore += compareCodeSimilarity(icdCode, theCode);
+  totalSimilarityScore += compareCodeSimilarity(icdCode, diagnosisIcd);
 
-  totalSimilarityScore += compareTextSimilarity(title, matchingText);
+  totalSimilarityScore += compareTextSimilarity(
+    title,
+    diagnosisTitle['@value']
+  );
 
   if (
     entityHasDefinition(leadConditionDefinition) &&
@@ -62,8 +65,6 @@ function compareTextSimilarity(
     [...leadWords].filter((x) => diagnosisWords.has(x))
   );
   const union = new Set([...leadWords, ...diagnosisWords]);
-
-  console.log(intersection.size / union.size);
 
   return intersection.size / union.size;
 }

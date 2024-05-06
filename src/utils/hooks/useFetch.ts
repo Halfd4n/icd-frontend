@@ -3,11 +3,12 @@ import { useEffect, useRef, useState } from 'react';
 type Props = {
   url: string;
   method: 'GET' | 'POST';
+  authToken: string;
   body?: string;
   skip: boolean;
 };
 
-const useFetch = <T>({ url, method = 'GET', body, skip }: Props) => {
+const useFetch = <T>({ url, method = 'GET', authToken, body, skip }: Props) => {
   const hasFetchedRef = useRef(false);
   const [data, setData] = useState<T>();
   const [error, setError] = useState<any>();
@@ -23,6 +24,7 @@ const useFetch = <T>({ url, method = 'GET', body, skip }: Props) => {
         const response = await fetch(url, {
           method,
           headers: {
+            Authorization: `Bearer ${authToken}`,
             'Content-Type': 'application/json',
           },
           body,

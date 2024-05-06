@@ -1,18 +1,16 @@
 import { SearchDiagnosisResponse } from '@/types/icd/IcdSearchDiagnosis';
 import {
-  Box,
   Paper,
-  Stack,
   Table,
   TableBody,
   TableCell,
   TableContainer,
   TableHead,
   TableRow,
-  Typography,
 } from '@mui/material';
 import { useEffect, useState } from 'react';
 import LeadEstimateComponent from '../lead/leadEstimate';
+import { useAuth } from '@/context/authContext';
 
 type DiagnosisProps = {
   diagnosisEntity: SearchDiagnosisResponse;
@@ -20,6 +18,7 @@ type DiagnosisProps = {
 
 const DiagnosisComponent = ({ diagnosisEntity }: DiagnosisProps) => {
   const [diagnosis, setDiagnosis] = useState(diagnosisEntity);
+  const { authToken } = useAuth();
 
   useEffect(() => {
     if (diagnosisEntity) {
@@ -32,7 +31,13 @@ const DiagnosisComponent = ({ diagnosisEntity }: DiagnosisProps) => {
       await fetch(
         `/api/foundation-definition?foundationUri=${encodeURIComponent(
           diagnosisEntity.foundationURI
-        )}`
+        )}`,
+        {
+          headers: {
+            Authorization: `Bearer ${authToken}`,
+            'Content-Type': 'application/json',
+          },
+        }
       )
         .then((response) => response.json())
         .then((data) => {
@@ -68,7 +73,13 @@ const DiagnosisComponent = ({ diagnosisEntity }: DiagnosisProps) => {
                 : 'No definition available'}
             </TableCell>
             <TableCell sx={{ width: 100 }}>
-              <LeadEstimateComponent diagnosis={diagnosis} />
+              <LeadEstimateComponent
+                diagnosis={{
+                  icdCode: diagnosis.theCode,
+                  title: diagnosis.matchingText,
+                  definition: diagnosis.definition,
+                }}
+              />
             </TableCell>
           </TableRow>
         </TableBody>

@@ -4,17 +4,19 @@ import { Box, Stack, Tabs, Typography } from '@mui/material';
 import FoundationEntityTab from './tab/FoundationTabComponent';
 import { useState } from 'react';
 import FoundationTabsParent from './tab/FoundationParentTabs';
+import { useAuth } from '@/context/authContext';
 
-const FOUNDATION_ICD_TOP_LEVEL_URL =
-  'http://localhost:5000/api/icd/entity/455013390';
+const FOUNDATION_ICD_TOP_LEVEL_URL = `/api/icd/foundationId?foundationId=455013390`;
 
 const BrowseFoundationComponent = () => {
   const [activeTab, setActiveTab] = useState<number | boolean>(false);
   const [selectedEntityId, setSelectedEntityId] = useState<string | null>(null);
+  const { authToken } = useAuth();
 
   const { data, error, loading } = useFetch<FoundationEntity>({
     url: FOUNDATION_ICD_TOP_LEVEL_URL,
     method: 'GET',
+    authToken: authToken!,
     skip: false,
   });
 

@@ -3,6 +3,7 @@ import useFetch from '@/utils/hooks/useFetch';
 import { useEffect, useState } from 'react';
 import AccordionIcdDataComponent from './AccordionIcdDataComponent';
 import { EnrichedIcdData } from '@/types/icd/EnrichedIcdData';
+import { useAuth } from '@/context/authContext';
 
 type AccordionBodyProps = {
   icdCodes?: string;
@@ -10,6 +11,7 @@ type AccordionBodyProps = {
 
 const AccordionBodyComponent = ({ icdCodes }: AccordionBodyProps) => {
   const [displayData, setDisplayData] = useState<EnrichedIcdData>([]);
+  const { authToken } = useAuth();
 
   const encodedIcd = icdCodes ? encodeURIComponent(icdCodes) : undefined;
 
@@ -18,7 +20,8 @@ const AccordionBodyComponent = ({ icdCodes }: AccordionBodyProps) => {
     error,
     loading,
   } = useFetch<EnrichedIcdData>({
-    url: `http://localhost:5000/api/icd/enriched/${encodedIcd}`,
+    url: `/api/icd/icdCode?icdCode=${encodedIcd}`,
+    authToken: `${authToken}`,
     method: 'GET',
     skip: !encodedIcd,
   });

@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { useAuth } from '@/context/authContext';
 import BrowseFoundation from '@/components/BrowseFoundationComponent';
 import SearchResultComponent from '@/components/SearchResultComponent';
 import ButtonComponent from '@/components/button/ButtonComponent';
@@ -5,10 +7,13 @@ import {
   primaryButtonStyle,
   secondaryButtonStyle,
 } from '@/components/button/ButtonStyles';
-import { Box, Button, Stack, TextField, Typography } from '@mui/material';
-import { useState } from 'react';
+import { Box, Stack, TextField, Typography } from '@mui/material';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import CancelIcon from '@mui/icons-material/Cancel';
 
 export default function Home() {
+  const { authToken } = useAuth();
+  const [icdData, setIcdData] = useState(null);
   const [inputData, setInputData] = useState('');
   const [selectedSearchType, setSelectedSearchType] = useState<
     | 'freeText'
@@ -17,14 +22,13 @@ export default function Home() {
     | 'browseFoundation'
     | 'searchDiagnosis'
   >('freeText');
-  const [icdData, setIcdData] = useState(null);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const newSearchQuery = event.target.value;
     setInputData(newSearchQuery);
 
     if (selectedSearchType === 'freeText' && newSearchQuery.length > 0) {
-      freeTextSearch(newSearchQuery);
+      freeTextSearch();
     }
   };
 
@@ -42,84 +46,87 @@ export default function Home() {
     setSelectedSearchType(searchType);
   };
 
-  const freeTextSearch = async (searchQuery: string) => {
-    const response = await fetch(
-      `http://localhost:5000/api/icd/search/${searchQuery}`
-    );
-
-    if (!response.ok) {
-      console.log('Error fetching data');
-    }
-
-    const data = await response.json();
-
-    setIcdData(data);
-  };
-
-  const icdCodeSearch = async (icdCode: string) => {
-    try {
-      const response = await fetch(
-        `http://localhost:5000/api/icd/enriched/${icdCode}`
-      );
-
-      const data = await response.json();
-      setIcdData(data);
-    } catch (err) {
-      console.log('Error fetching data: ', err);
-    }
-  };
-
-  const foundationIdSearch = async (foundationId: string) => {
-    try {
-      const response = await fetch(
-        `http://localhost:5000/api/icd/entity/${foundationId}`
-      );
-
-      const data = await response.json();
-      setIcdData(data);
-    } catch (err) {
-      console.log('Error fetching data: ', err);
-    }
-  };
-
-  const searchDiagnosis = async (diagnosisText: string) => {
-    try {
-      const uriEncodedDiagnosis = encodeURIComponent(diagnosisText);
-
-      const response = await fetch(
-        `http://localhost:5000/api/icd/diagnosis?searchText=${uriEncodedDiagnosis}`
-      );
-
-      const data = await response.json();
-      setIcdData(data);
-    } catch (err) {
-      console.log('Error fetching data: ', err);
-    }
+  const freeTextSearch = async () => {
+    await handleSubmit();
   };
 
   const handleSubmit = async () => {
-    const searchQuery = inputData;
+    if (!inputData) return;
 
-    if (selectedSearchType === 'freeText') {
-      freeTextSearch(searchQuery);
-    } else if (selectedSearchType === 'icdCode') {
-      icdCodeSearch(searchQuery);
-    } else if (selectedSearchType === 'foundationId') {
-      foundationIdSearch(searchQuery);
-    } else {
-      searchDiagnosis(searchQuery);
+    let searchParams = {};
+
+    switch (selectedSearchType) {
+      case 'freeText':
+        searchParams = { query: inputData };
+        break;
+      case 'icdCode':
+        searchParams = { icdCode: inputData };
+        break;
+      case 'foundationId':
+        searchParams = { foundationId: inputData };
+        break;
+      case 'searchDiagnosis':
+        searchParams = { diagnosisText: inputData };
+        break;
+    }
+
+    handleSearch(selectedSearchType, searchParams);
+  };
+
+  const handleSearch = async (searchType: string, searchParams: any) => {
+    const data = await performSearch(searchType, searchParams);
+    setIcdData(data);
+  };
+
+  const performSearch = async (searchType: string, params: any) => {
+    const queryString = new URLSearchParams(params).toString();
+    const url = `/api/icd/${searchType}?${queryString}`;
+
+    try {
+      const response = await fetch(url, {
+        headers: {
+          Authorization: `Bearer ${authToken}`,
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to fetch external data');
+      }
+
+      return await response.json();
+    } catch (error) {
+      console.error('Error fetching external API: ', error);
+      return null;
     }
   };
 
   return (
-    <Box sx={{ p: 10 }}>
-      <Stack>
-        <Typography
-          variant="h3"
-          textAlign="center"
-        >
-          ICD-11 Service
-        </Typography>
+    <Box sx={{ p: 5 }}>
+      <Stack
+        direction="row"
+        sx={{ p: 2, alignItems: 'center', width: '100%', position: 'relative' }}
+      >
+        <Typography variant="h4">ICD-11 Service</Typography>
+        <Box sx={{ position: 'absolute', right: 20 }}>
+          <Stack
+            direction="row"
+            alignItems="center"
+            spacing={1}
+          >
+            {authToken !== null ? (
+              <>
+                <Typography sx={{ mr: 1 }}>Token validated</Typography>
+                <CheckCircleIcon sx={{ color: 'green', fontSize: 40 }} />
+              </>
+            ) : (
+              <>
+                <Typography sx={{ mr: 1 }}>Token not validated</Typography>
+                <CancelIcon sx={{ color: 'red', fontSize: 40 }} />
+              </>
+            )}
+          </Stack>
+        </Box>
       </Stack>
       <Stack direction="column">
         <Stack

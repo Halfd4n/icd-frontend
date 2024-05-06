@@ -4,7 +4,7 @@ import { Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
 
 type LeadEstimateProps = {
-  diagnosis: SearchDiagnosisResponse;
+  diagnosis: any;
 };
 
 interface ScoreCounts {

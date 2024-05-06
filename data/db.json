@@ -440,5 +440,362 @@
         }
       }
     ]
+  },
+  {
+    "id": "lead-25",
+    "gender": "other",
+    "yearOfBirth": 1966,
+    "conditions": [
+      {
+        "icdCode": "CA40",
+        "foundationId": "142052508",
+        "title": "Pneumonia",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "A disease of the lungs, frequently but not always caused by an infection with bacteria, virus, fungus, or parasite. This disease is characterised by fever, chills, cough with sputum production, chest pain and shortness of breath. Confirmation is by chest x-ray."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-26",
+    "gender": "male",
+    "yearOfBirth": 1970,
+    "conditions": [
+      {
+        "icdCode": "CA40",
+        "foundationId": "142052508",
+        "title": "Pneumonia",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "A disease of the lungs, frequently but not always caused by an infection with bacteria, virus, fungus, or parasite. This disease is characterised by fever, chills, cough with sputum production, chest pain and shortness of breath. Confirmation is by chest x-ray."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-27",
+    "gender": "other",
+    "yearOfBirth": 1981,
+    "conditions": [
+      {
+        "icdCode": "CA40",
+        "foundationId": "142052508",
+        "title": "Pneumonia",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "A disease of the lungs, frequently but not always caused by an infection with bacteria, virus, fungus, or parasite. This disease is characterised by fever, chills, cough with sputum production, chest pain and shortness of breath. Confirmation is by chest x-ray."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-28",
+    "gender": "male",
+    "yearOfBirth": 1990,
+    "conditions": [
+      {
+        "icdCode": "CA40.0",
+        "foundationId": "1323682030",
+        "title": "Bacterial Pneumonia",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "A disease of the pulmonary system, caused by an infection with a bacterial source. This disease is characterised by fever, lethargy, headache, myalgia, vomiting, or coughing. Transmission is by inhalation of infected respiratory secretions. Confirmation is by identification of the bacterial source in a sputum sample."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-29",
+    "gender": "male",
+    "yearOfBirth": 1987,
+    "conditions": [
+      {
+        "icdCode": "CA40.0",
+        "foundationId": "1323682030",
+        "title": "Bacterial Pneumonia",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "A disease of the pulmonary system, caused by an infection with a bacterial source. This disease is characterised by fever, lethargy, headache, myalgia, vomiting, or coughing. Transmission is by inhalation of infected respiratory secretions. Confirmation is by identification of the bacterial source in a sputum sample."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-30",
+    "gender": "female",
+    "yearOfBirth": 1977,
+    "conditions": [
+      {
+        "icdCode": "CA40.0",
+        "foundationId": "1323682030",
+        "title": "Bacterial Pneumonia",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "A disease of the pulmonary system, caused by an infection with a bacterial source. This disease is characterised by fever, lethargy, headache, myalgia, vomiting, or coughing. Transmission is by inhalation of infected respiratory secretions. Confirmation is by identification of the bacterial source in a sputum sample."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-31",
+    "gender": "female",
+    "yearOfBirth": 1969,
+    "conditions": [
+      {
+        "icdCode": "CA40.0",
+        "foundationId": "1323682030",
+        "title": "Bacterial Pneumonia",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "A disease of the pulmonary system, caused by an infection with a bacterial source. This disease is characterised by fever, lethargy, headache, myalgia, vomiting, or coughing. Transmission is by inhalation of infected respiratory secretions. Confirmation is by identification of the bacterial source in a sputum sample."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-32",
+    "gender": "male",
+    "yearOfBirth": 1975,
+    "conditions": [
+      {
+        "icdCode": "CA40.0",
+        "foundationId": "1323682030",
+        "title": "Bacterial Pneumonia",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "A disease of the pulmonary system, caused by an infection with a bacterial source. This disease is characterised by fever, lethargy, headache, myalgia, vomiting, or coughing. Transmission is by inhalation of infected respiratory secretions. Confirmation is by identification of the bacterial source in a sputum sample."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-33",
+    "gender": "male",
+    "yearOfBirth": 1967,
+    "conditions": [
+      {
+        "icdCode": "1A00",
+        "foundationId": "257068234",
+        "title": "Cholera",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Cholera is a potentially epidemic and life-threatening infection of the intestine, characterised by extreme watery (secretory) diarrhoea often accompanied by vomiting, with rapid depletion of body fluids and salt that may result in hypovolemic shock and acidosis. Cholera outbreaks are caused by toxigenic strains of Vibrio cholerae serogroups O1 and O139. Serogroup O1 has two biovars; classical and eltor. Vibrio cholerae O1, biovar cholerae is classical type. Vibrio cholerae O1, biovar eltor is eltor type."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-34",
+    "gender": "female",
+    "yearOfBirth": 1970,
+    "conditions": [
+      {
+        "icdCode": "1A00",
+        "foundationId": "257068234",
+        "title": "Cholera",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Cholera is a potentially epidemic and life-threatening infection of the intestine, characterised by extreme watery (secretory) diarrhoea often accompanied by vomiting, with rapid depletion of body fluids and salt that may result in hypovolemic shock and acidosis. Cholera outbreaks are caused by toxigenic strains of Vibrio cholerae serogroups O1 and O139. Serogroup O1 has two biovars; classical and eltor. Vibrio cholerae O1, biovar cholerae is classical type. Vibrio cholerae O1, biovar eltor is eltor type."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-35",
+    "gender": "male",
+    "yearOfBirth": 1962,
+    "conditions": [
+      {
+        "icdCode": "1A00",
+        "foundationId": "257068234",
+        "title": "Cholera",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Cholera is a potentially epidemic and life-threatening infection of the intestine, characterised by extreme watery (secretory) diarrhoea often accompanied by vomiting, with rapid depletion of body fluids and salt that may result in hypovolemic shock and acidosis. Cholera outbreaks are caused by toxigenic strains of Vibrio cholerae serogroups O1 and O139. Serogroup O1 has two biovars; classical and eltor. Vibrio cholerae O1, biovar cholerae is classical type. Vibrio cholerae O1, biovar eltor is eltor type."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-36",
+    "gender": "male",
+    "yearOfBirth": 1985,
+    "conditions": [
+      {
+        "icdCode": "1A00",
+        "foundationId": "257068234",
+        "title": "Cholera",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Cholera is a potentially epidemic and life-threatening infection of the intestine, characterised by extreme watery (secretory) diarrhoea often accompanied by vomiting, with rapid depletion of body fluids and salt that may result in hypovolemic shock and acidosis. Cholera outbreaks are caused by toxigenic strains of Vibrio cholerae serogroups O1 and O139. Serogroup O1 has two biovars; classical and eltor. Vibrio cholerae O1, biovar cholerae is classical type. Vibrio cholerae O1, biovar eltor is eltor type."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-37",
+    "gender": "other",
+    "yearOfBirth": 2001,
+    "conditions": [
+      {
+        "icdCode": "1A00",
+        "foundationId": "257068234",
+        "title": "Cholera",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Cholera is a potentially epidemic and life-threatening infection of the intestine, characterised by extreme watery (secretory) diarrhoea often accompanied by vomiting, with rapid depletion of body fluids and salt that may result in hypovolemic shock and acidosis. Cholera outbreaks are caused by toxigenic strains of Vibrio cholerae serogroups O1 and O139. Serogroup O1 has two biovars; classical and eltor. Vibrio cholerae O1, biovar cholerae is classical type. Vibrio cholerae O1, biovar eltor is eltor type."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-38",
+    "gender": "male",
+    "yearOfBirth": 1988,
+    "conditions": [
+      {
+        "icdCode": "1A00",
+        "foundationId": "257068234",
+        "title": "Cholera",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Cholera is a potentially epidemic and life-threatening infection of the intestine, characterised by extreme watery (secretory) diarrhoea often accompanied by vomiting, with rapid depletion of body fluids and salt that may result in hypovolemic shock and acidosis. Cholera outbreaks are caused by toxigenic strains of Vibrio cholerae serogroups O1 and O139. Serogroup O1 has two biovars; classical and eltor. Vibrio cholerae O1, biovar cholerae is classical type. Vibrio cholerae O1, biovar eltor is eltor type."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-39",
+    "gender": "male",
+    "yearOfBirth": 1967,
+    "conditions": [
+      {
+        "icdCode": "1A02",
+        "foundationId": "2080365623",
+        "title": "Intestinal infections due to Shigella",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "A disease caused by an infection with the gram-negative bacteria genus Shigella. This disease is characterised by an acute onset of small volume diarrhoea, accompanied by fever and nausea. This disease may also present with toxaemia, vomiting, cramps, and tenesmus. Transmission is by ingestion of contaminated food, or direct contact. Confirmation is by identification of Shigella in a faecal sample."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-40",
+    "gender": "female",
+    "yearOfBirth": 1978,
+    "conditions": [
+      {
+        "icdCode": "1A02",
+        "foundationId": "2080365623",
+        "title": "Intestinal infections due to Shigella",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "A disease caused by an infection with the gram-negative bacteria genus Shigella. This disease is characterised by an acute onset of small volume diarrhoea, accompanied by fever and nausea. This disease may also present with toxaemia, vomiting, cramps, and tenesmus. Transmission is by ingestion of contaminated food, or direct contact. Confirmation is by identification of Shigella in a faecal sample."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-41",
+    "gender": "male",
+    "yearOfBirth": 1980,
+    "conditions": [
+      {
+        "icdCode": "1A02",
+        "foundationId": "2080365623",
+        "title": "Intestinal infections due to Shigella",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "A disease caused by an infection with the gram-negative bacteria genus Shigella. This disease is characterised by an acute onset of small volume diarrhoea, accompanied by fever and nausea. This disease may also present with toxaemia, vomiting, cramps, and tenesmus. Transmission is by ingestion of contaminated food, or direct contact. Confirmation is by identification of Shigella in a faecal sample."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-42",
+    "gender": "other",
+    "yearOfBirth": 1969,
+    "conditions": [
+      {
+        "icdCode": "1A02",
+        "foundationId": "2080365623",
+        "title": "Intestinal infections due to Shigella",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "A disease caused by an infection with the gram-negative bacteria genus Shigella. This disease is characterised by an acute onset of small volume diarrhoea, accompanied by fever and nausea. This disease may also present with toxaemia, vomiting, cramps, and tenesmus. Transmission is by ingestion of contaminated food, or direct contact. Confirmation is by identification of Shigella in a faecal sample."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-43",
+    "gender": "male",
+    "yearOfBirth": 1976,
+    "conditions": [
+      {
+        "icdCode": "1A0Z",
+        "foundationId": "135352227",
+        "title": "Bacterial intestinal infections",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Any condition of the intestines, caused by an infection with a bacterial source."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-44",
+    "gender": "female",
+    "yearOfBirth": 1988,
+    "conditions": [
+      {
+        "icdCode": "1A0Z",
+        "foundationId": "135352227",
+        "title": "Bacterial intestinal infections",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Any condition of the intestines, caused by an infection with a bacterial source."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-45",
+    "gender": "male",
+    "yearOfBirth": 1993,
+    "conditions": [
+      {
+        "icdCode": "1A0Z",
+        "foundationId": "135352227",
+        "title": "Bacterial intestinal infections",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Any condition of the intestines, caused by an infection with a bacterial source."
+        }
+      }
+    ]
   }
 ]

@@ -3,9 +3,10 @@ import useFetch from '@/utils/hooks/useFetch';
 import { Tab, Typography } from '@mui/material';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import React, { useEffect } from 'react';
+import { useAuth } from '@/context/authContext';
 
 const ICD_FOUNDATION_ID_REGEX = /\/(\d+)/;
-const FOUNDATION_ID_URL = 'http://localhost:5000/api/icd/entity/';
+const FOUNDATION_ID_URL = `/api/icd/foundationId?foundationId=`;
 
 type FoundationTabProps = {
   foundationUri: string;
@@ -23,10 +24,12 @@ const FoundationEntityTab = ({
   onFoundationIdChange,
 }: FoundationTabProps) => {
   const foundationId = extractFoundationId(foundationUri);
+  const { authToken } = useAuth();
 
   const { data, error, loading } = useFetch<FoundationEntity>({
     url: `${FOUNDATION_ID_URL}${foundationId}`,
     method: 'GET',
+    authToken: authToken!,
     skip: !foundationId,
   });
 

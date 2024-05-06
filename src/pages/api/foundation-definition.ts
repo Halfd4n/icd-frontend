@@ -7,12 +7,19 @@ export default async function foundationDefinitionHandler(
   res: NextApiResponse
 ) {
   const { foundationUri } = req.query;
+  const authToken = req.headers.authorization?.split(' ')[1];
 
   const foundationId = extractFoundationId(foundationUri!.toString());
 
   try {
     const response = await fetch(
-      `http://localhost:5000/api/icd/entity/${foundationId}`
+      `${process.env.SERVICE_API_URL}/api/icd/entity/${foundationId}`,
+      {
+        headers: {
+          Authorization: `Bearer ${authToken}`,
+          'Content-Type': 'application/json',
+        },
+      }
     );
 
     const data = await response.json();
