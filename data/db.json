@@ -1,0 +1,444 @@
+[
+  {
+    "id": "lead-0",
+    "gender": "male",
+    "yearOfBirth": 1959,
+    "conditions": [
+      {
+        "icdCode": "5A10",
+        "foundationId": "1651053999",
+        "title": "Type 1 diabetes mellitus",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus type 1 (type 1 diabetes, T1DM, formerly insulin dependent or juvenile diabetes) is a form of diabetes mellitus that results from destruction of insulin-producing beta cells, mostly by autoimmune mechanisms. The subsequent lack of insulin leads to increased blood and urine glucose."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-1",
+    "gender": "female",
+    "yearOfBirth": 1985,
+    "conditions": [
+      {
+        "icdCode": "5A11",
+        "foundationId": "119724091",
+        "title": "Type 2 diabetes mellitus",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus type 2 (formerly noninsulin-dependent diabetes mellitus (NIDDM) or adult-onset diabetes) is a metabolic disorder that is characterised by high blood glucose in the context of insulin resistance and relative insulin deficiency."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-2",
+    "gender": "male",
+    "yearOfBirth": 1980,
+    "conditions": [
+      {
+        "icdCode": "5A11",
+        "foundationId": "119724091",
+        "title": "Type 2 diabetes mellitus",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus type 2 (formerly noninsulin-dependent diabetes mellitus (NIDDM) or adult-onset diabetes) is a metabolic disorder that is characterised by high blood glucose in the context of insulin resistance and relative insulin deficiency."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-3",
+    "gender": "male",
+    "yearOfBirth": 1994,
+    "conditions": [
+      {
+        "icdCode": "5A11",
+        "foundationId": "119724091",
+        "title": "Type 2 diabetes mellitus",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus type 2 (formerly noninsulin-dependent diabetes mellitus (NIDDM) or adult-onset diabetes) is a metabolic disorder that is characterised by high blood glucose in the context of insulin resistance and relative insulin deficiency."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-4",
+    "gender": "female",
+    "yearOfBirth": 1974,
+    "conditions": [
+      {
+        "icdCode": "5A11",
+        "foundationId": "119724091",
+        "title": "Type 2 diabetes mellitus",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus type 2 (formerly noninsulin-dependent diabetes mellitus (NIDDM) or adult-onset diabetes) is a metabolic disorder that is characterised by high blood glucose in the context of insulin resistance and relative insulin deficiency."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-5",
+    "gender": "female",
+    "yearOfBirth": 1991,
+    "conditions": [
+      {
+        "icdCode": "5A11",
+        "foundationId": "119724091",
+        "title": "Type 2 diabetes mellitus",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus type 2 (formerly noninsulin-dependent diabetes mellitus (NIDDM) or adult-onset diabetes) is a metabolic disorder that is characterised by high blood glucose in the context of insulin resistance and relative insulin deficiency."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-6",
+    "gender": "other",
+    "yearOfBirth": 1989,
+    "conditions": [
+      {
+        "icdCode": "5A11",
+        "foundationId": "119724091",
+        "title": "Type 2 diabetes mellitus",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus type 2 (formerly noninsulin-dependent diabetes mellitus (NIDDM) or adult-onset diabetes) is a metabolic disorder that is characterised by high blood glucose in the context of insulin resistance and relative insulin deficiency."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-7",
+    "gender": "male",
+    "yearOfBirth": 1988,
+    "conditions": [
+      {
+        "icdCode": "5A11",
+        "foundationId": "119724091",
+        "title": "Type 2 diabetes mellitus",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus type 2 (formerly noninsulin-dependent diabetes mellitus (NIDDM) or adult-onset diabetes) is a metabolic disorder that is characterised by high blood glucose in the context of insulin resistance and relative insulin deficiency."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-8",
+    "gender": "female",
+    "yearOfBirth": 1969,
+    "conditions": [
+      {
+        "icdCode": "5A11",
+        "foundationId": "119724091",
+        "title": "Type 2 diabetes mellitus",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus type 2 (formerly noninsulin-dependent diabetes mellitus (NIDDM) or adult-onset diabetes) is a metabolic disorder that is characterised by high blood glucose in the context of insulin resistance and relative insulin deficiency."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-9",
+    "gender": "male",
+    "yearOfBirth": 1982,
+    "conditions": [
+      {
+        "icdCode": "5A10",
+        "foundationId": "1651053999",
+        "title": "Type 1 diabetes mellitus",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus type 1 (type 1 diabetes, T1DM, formerly insulin dependent or juvenile diabetes) is a form of diabetes mellitus that results from destruction of insulin-producing beta cells, mostly by autoimmune mechanisms. The subsequent lack of insulin leads to increased blood and urine glucose."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-10",
+    "gender": "male",
+    "yearOfBirth": 1976,
+    "conditions": [
+      {
+        "icdCode": "5A11",
+        "foundationId": "119724091",
+        "title": "Type 2 diabetes mellitus",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus type 2 (formerly noninsulin-dependent diabetes mellitus (NIDDM) or adult-onset diabetes) is a metabolic disorder that is characterised by high blood glucose in the context of insulin resistance and relative insulin deficiency."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-11",
+    "gender": "unknown",
+    "yearOfBirth": 1974,
+    "conditions": [
+      {
+        "icdCode": "5A10",
+        "foundationId": "1651053999",
+        "title": "Type 1 diabetes mellitus",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus type 1 (type 1 diabetes, T1DM, formerly insulin dependent or juvenile diabetes) is a form of diabetes mellitus that results from destruction of insulin-producing beta cells, mostly by autoimmune mechanisms. The subsequent lack of insulin leads to increased blood and urine glucose."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-12",
+    "gender": "male",
+    "yearOfBirth": 1968,
+    "conditions": [
+      {
+        "icdCode": "5A11",
+        "foundationId": "119724091",
+        "title": "Type 2 diabetes mellitus",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus type 2 (formerly noninsulin-dependent diabetes mellitus (NIDDM) or adult-onset diabetes) is a metabolic disorder that is characterised by high blood glucose in the context of insulin resistance and relative insulin deficiency."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-13",
+    "gender": "female",
+    "yearOfBirth": 1965,
+    "conditions": [
+      {
+        "icdCode": "5A10",
+        "foundationId": "1651053999",
+        "title": "Type 1 diabetes mellitus",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus type 1 (type 1 diabetes, T1DM, formerly insulin dependent or juvenile diabetes) is a form of diabetes mellitus that results from destruction of insulin-producing beta cells, mostly by autoimmune mechanisms. The subsequent lack of insulin leads to increased blood and urine glucose."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-14",
+    "gender": "male",
+    "yearOfBirth": 1975,
+    "conditions": [
+      {
+        "icdCode": "5A11",
+        "foundationId": "119724091",
+        "title": "Type 2 diabetes mellitus",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus type 2 (formerly noninsulin-dependent diabetes mellitus (NIDDM) or adult-onset diabetes) is a metabolic disorder that is characterised by high blood glucose in the context of insulin resistance and relative insulin deficiency."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-15",
+    "gender": "male",
+    "yearOfBirth": 1976,
+    "conditions": [
+      {
+        "icdCode": "5A10",
+        "foundationId": "1651053999",
+        "title": "Type 1 diabetes mellitus",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus type 1 (type 1 diabetes, T1DM, formerly insulin dependent or juvenile diabetes) is a form of diabetes mellitus that results from destruction of insulin-producing beta cells, mostly by autoimmune mechanisms. The subsequent lack of insulin leads to increased blood and urine glucose."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-16",
+    "gender": "female",
+    "yearOfBirth": 1979,
+    "conditions": [
+      {
+        "icdCode": "5A10",
+        "foundationId": "1651053999",
+        "title": "Type 1 diabetes mellitus",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus type 1 (type 1 diabetes, T1DM, formerly insulin dependent or juvenile diabetes) is a form of diabetes mellitus that results from destruction of insulin-producing beta cells, mostly by autoimmune mechanisms. The subsequent lack of insulin leads to increased blood and urine glucose."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-17",
+    "gender": "female",
+    "yearOfBirth": 1987,
+    "conditions": [
+      {
+        "icdCode": "5A11",
+        "foundationId": "119724091",
+        "title": "Type 2 diabetes mellitus",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus type 2 (formerly noninsulin-dependent diabetes mellitus (NIDDM) or adult-onset diabetes) is a metabolic disorder that is characterised by high blood glucose in the context of insulin resistance and relative insulin deficiency."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-18",
+    "gender": "other",
+    "yearOfBirth": 1973,
+    "conditions": [
+      {
+        "icdCode": "5A10",
+        "foundationId": "1651053999",
+        "title": "Type 1 diabetes mellitus",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus type 1 (type 1 diabetes, T1DM, formerly insulin dependent or juvenile diabetes) is a form of diabetes mellitus that results from destruction of insulin-producing beta cells, mostly by autoimmune mechanisms. The subsequent lack of insulin leads to increased blood and urine glucose."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-19",
+    "gender": "other",
+    "yearOfBirth": 1969,
+    "conditions": [
+      {
+        "icdCode": "5A11",
+        "foundationId": "119724091",
+        "title": "Type 2 diabetes mellitus",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus type 2 (formerly noninsulin-dependent diabetes mellitus (NIDDM) or adult-onset diabetes) is a metabolic disorder that is characterised by high blood glucose in the context of insulin resistance and relative insulin deficiency."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-20",
+    "gender": "female",
+    "yearOfBirth": 1999,
+    "conditions": [
+      {
+        "icdCode": "5A10",
+        "foundationId": "1651053999",
+        "title": "Type 1 diabetes mellitus",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus type 1 (type 1 diabetes, T1DM, formerly insulin dependent or juvenile diabetes) is a form of diabetes mellitus that results from destruction of insulin-producing beta cells, mostly by autoimmune mechanisms. The subsequent lack of insulin leads to increased blood and urine glucose."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-21",
+    "gender": "male",
+    "yearOfBirth": 1995,
+    "conditions": [
+      {
+        "icdCode": "5A13",
+        "foundationId": "381961554",
+        "title": "Diabetes mellitus, other specified type",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus which cannot be classified as either Type 1 or Type 2 diabetes mellitus."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-22",
+    "gender": "male",
+    "yearOfBirth": 1974,
+    "conditions": [
+      {
+        "icdCode": "5A13",
+        "foundationId": "381961554",
+        "title": "Diabetes mellitus, other specified type",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus which cannot be classified as either Type 1 or Type 2 diabetes mellitus."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-22",
+    "gender": "female",
+    "yearOfBirth": 1968,
+    "conditions": [
+      {
+        "icdCode": "5A13",
+        "foundationId": "381961554",
+        "title": "Diabetes mellitus, other specified type",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus which cannot be classified as either Type 1 or Type 2 diabetes mellitus."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-23",
+    "gender": "female",
+    "yearOfBirth": 1959,
+    "conditions": [
+      {
+        "icdCode": "5A13",
+        "foundationId": "381961554",
+        "title": "Diabetes mellitus, other specified type",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus which cannot be classified as either Type 1 or Type 2 diabetes mellitus."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lead-24",
+    "gender": "male",
+    "yearOfBirth": 1989,
+    "conditions": [
+      {
+        "icdCode": "5A13",
+        "foundationId": "381961554",
+        "title": "Diabetes mellitus, other specified type",
+        "synonymLabels": [],
+        "definition": {
+          "@language": "en",
+          "@value": "Diabetes mellitus which cannot be classified as either Type 1 or Type 2 diabetes mellitus."
+        }
+      }
+    ]
+  }
+]
