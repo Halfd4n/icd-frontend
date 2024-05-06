@@ -1,8 +1,7 @@
 import { SearchDiagnosisResponse } from '@/types/icd/IcdSearchDiagnosis';
 import { objectToBase64Converter } from '@/utils/base64Converter/base64Converter';
-import { Box, Stack, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
-import { json } from 'stream/consumers';
 
 type LeadEstimateProps = {
   diagnosis: SearchDiagnosisResponse;

@@ -118,7 +118,7 @@ export default function Home() {
           variant="h3"
           textAlign="center"
         >
-          Trialbee ICD-11 Service
+          ICD-11 Service
         </Typography>
       </Stack>
       <Stack direction="column">

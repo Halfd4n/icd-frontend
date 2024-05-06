@@ -63,6 +63,8 @@ function compareTextSimilarity(
   );
   const union = new Set([...leadWords, ...diagnosisWords]);
 
+  console.log(intersection.size / union.size);
+
   return intersection.size / union.size;
 }
 
