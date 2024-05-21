@@ -29,7 +29,7 @@ const DiagnosisComponent = ({ diagnosisEntity }: DiagnosisProps) => {
   const fetchFoundationDescription = async () => {
     try {
       await fetch(
-        `/api/foundation-definition?foundationUri=${encodeURIComponent(
+        `/api/diagnosis-enrichment?foundationUri=${encodeURIComponent(
           diagnosisEntity.foundationURI
         )}`,
         {
@@ -41,7 +41,8 @@ const DiagnosisComponent = ({ diagnosisEntity }: DiagnosisProps) => {
       )
         .then((response) => response.json())
         .then((data) => {
-          const enrichedDiagnosis = { ...diagnosisEntity, definition: data };
+          const { title, definition } = data;
+          const enrichedDiagnosis = { ...diagnosisEntity, title, definition };
           setDiagnosis(enrichedDiagnosis);
         });
     } catch (error) {
@@ -66,7 +67,11 @@ const DiagnosisComponent = ({ diagnosisEntity }: DiagnosisProps) => {
         <TableBody>
           <TableRow>
             <TableCell sx={{ width: 75 }}>{diagnosis.theCode}</TableCell>
-            <TableCell sx={{ width: 180 }}>{diagnosis.matchingText}</TableCell>
+            <TableCell sx={{ width: 180 }}>
+              {diagnosis?.title
+                ? diagnosis.title['@value']
+                : 'No title available'}
+            </TableCell>
             <TableCell sx={{ width: 450 }}>
               {diagnosis?.definition
                 ? diagnosis.definition['@value']
@@ -76,7 +81,7 @@ const DiagnosisComponent = ({ diagnosisEntity }: DiagnosisProps) => {
               <LeadEstimateComponent
                 diagnosis={{
                   icdCode: diagnosis.theCode,
-                  title: diagnosis.matchingText,
+                  title: diagnosis.title,
                   definition: diagnosis.definition,
                 }}
               />

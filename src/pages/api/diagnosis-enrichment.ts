@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 
 const ICD_FOUNDATION_ID_REGEX = /\/(\d+)(?:\/(\d+|[^\/]+))?$/;
 
-export default async function foundationDefinitionHandler(
+export default async function diagnosisEnrichmentHandler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
@@ -13,7 +13,7 @@ export default async function foundationDefinitionHandler(
 
   try {
     const response = await fetch(
-      `${process.env.SERVICE_API_URL}/api/icd/entity/${foundationId}`,
+      `${process.env.SERVICE_API_URL}/entity/${foundationId}`,
       {
         headers: {
           Authorization: `Bearer ${authToken}`,
@@ -25,12 +25,9 @@ export default async function foundationDefinitionHandler(
     const data = await response.json();
 
     if (data.definition) {
-      res.status(200).send(data.definition);
+      res.status(200).send(data);
     } else {
-      res.status(200).send({
-        '@language': 'en',
-        '@value': 'No definition available',
-      });
+      res.status(200).send({});
     }
   } catch (err) {
     console.log('Error fetching data: ', err);

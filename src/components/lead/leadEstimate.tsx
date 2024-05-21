@@ -1,5 +1,6 @@
 import { SearchDiagnosisResponse } from '@/types/icd/IcdSearchDiagnosis';
 import { objectToBase64Converter } from '@/utils/base64Converter/base64Converter';
+import CircularProgress from '@mui/material/CircularProgress';
 import { Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
 
@@ -44,7 +45,13 @@ const LeadEstimateComponent = ({ diagnosis }: LeadEstimateProps) => {
         ? leads.perfect
         : `${leads.perfect} - ${leads.total}`}
     </Typography>
-  ) : null;
+  ) : (
+    <Loading />
+  );
 };
 
 export default LeadEstimateComponent;
+
+const Loading = () => {
+  return <CircularProgress sx={{ color: '#ff9d00' }} />;
+};
